@@ -16,7 +16,7 @@ Compatibilidad Cruzada: Este reproductor ha sido diseñado para ser compatible c
 
 Clona este repositorio en tu máquina local.
 
-# bash
+Bash
 
 git clone https://github.com/DannyCrisostomo/Reproductor-de-musica.git
 
