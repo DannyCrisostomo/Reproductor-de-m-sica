@@ -8,8 +8,6 @@ Interfaz Atractiva: El reproductor cuenta con una interfaz limpia y atractiva qu
 
 Controles Intuitivos: Los controles del reproductor son fáciles de usar. Puedes reproducir, pausar, avanzar y retroceder fácilmente. Además, hay un control deslizante para ajustar el volumen.
 
-Lista de Reproducción: Agrega tus canciones favoritas a la lista de reproducción para crear tu propia lista de reproducción personalizada.
-
 Compatibilidad Cruzada: Este reproductor ha sido diseñado para ser compatible con diferentes navegadores, asegurando una experiencia de usuario consistente.
 
 # Cómo Usar:
