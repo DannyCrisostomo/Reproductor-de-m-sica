@@ -2,7 +2,7 @@
 
 Este es un sencillo reproductor de música web creado con HTML, CSS y JavaScript. Puedes utilizar este reproductor para reproducir tus canciones favoritas directamente desde tu navegador.
 
-#Características:
+# Características:
 
 Interfaz Atractiva: El reproductor cuenta con una interfaz limpia y atractiva que muestra la portada del álbum, el nombre de la canción y el artista.
 
@@ -12,11 +12,11 @@ Lista de Reproducción: Agrega tus canciones favoritas a la lista de reproducci�
 
 Compatibilidad Cruzada: Este reproductor ha sido diseñado para ser compatible con diferentes navegadores, asegurando una experiencia de usuario consistente.
 
-#Cómo Usar:
+# Cómo Usar:
 
 Clona este repositorio en tu máquina local.
 
-#bash
+# bash
 
 git clone https://github.com/DannyCrisostomo/Reproductor-de-musica.git
 
