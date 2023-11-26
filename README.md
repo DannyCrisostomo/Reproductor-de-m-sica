@@ -18,6 +18,6 @@ Clona este repositorio en tu máquina local.
 
 #bash
 
-git clone https://github.com/DannyCrisostomo/Reproductor-de-m-sica.git
+git clone https://github.com/DannyCrisostomo/Reproductor-de-musica.git
 
 ¡Disfruta de la música!
