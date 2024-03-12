@@ -1,5 +1,4 @@
 //Musica
-
 const audioPlayer = new Audio();
 const albumArt = document.querySelector('.album-art');
 const playButtons = document.querySelectorAll('.play-button');
@@ -7,7 +6,7 @@ const musicProgress = document.getElementById('music-progress');
 const playButton = document.getElementById('play-button');
 const backButton = document.getElementById('back-button');
 const nextButton = document.getElementById('next-button');
-const playlistItems = document.querySelectorAll('.playlist-table tbody tr');
+const playlistItems = document.querySelectorAll('.playlist-table tbody tr ');
 const musicaElement = document.getElementById('musica');
 const controlVolumen = document.getElementById('controlVolumen');
 const currentTimeDisplay = document.getElementById('current-time');
@@ -19,23 +18,47 @@ let isPlaying = false;
 let totalSongs = playlistItems.length;
 
 function changeSong(index) {
+    // Obtén el nombre de la música correspondiente al índice actual del bucle
+    //const datos_musica = [
+    //    {
+    //        imagen: "img/image1.jpg",
+    //        nombre:"boy1",
+    //       musica: "music1.mp3",
+    //   },
+    //    
+    const nombreDeLaMusica = datos_musica[index].nombre; 
+
+    // Obtén la fuente de audio (ruta de la música) del atributo data-src del botón de reproducción
     const audioSource = playlistItems[index].querySelector('.play-button').getAttribute('data-src');
+
+    // Obtén la fuente de la imagen de la etiqueta img dentro del elemento playlistItems
     const imageSource = playlistItems[index].querySelector('img').getAttribute('src');
+
+    // Establece la fuente del reproductor de audio
     audioPlayer.src = audioSource;
+
+    // Actualiza la visualización de la portada de la canción
     albumArt.innerHTML = `
-    <div class="circle-container">
-        <img id="circle" class="circle" src="${imageSource}" alt="Portada de la canción ${index + 1}">
-    </div>
+        <div class="circle-container">
+            <img id="circle" class="circle" src="${imageSource}" alt="Portada de la canción ${index + 1}">
+        </div>
     `;
+
+    // Carga la nueva fuente de audio
     audioPlayer.load();
+
+    // Reproduce la nueva canción si estaba reproduciéndose previamente
     if (isPlaying) {
         audioPlayer.play();
     }
-    musicaElement.textContent = audioSource; // Actualiza el nombre de la música
+
+    // Actualiza el nombre de la música en el elemento correspondiente
+    musicaElement.textContent = nombreDeLaMusica;
+
+    // Actualiza el índice de la canción actual
     currentSongIndex = index;
-
-
 }
+
 
 controlVolumen.addEventListener('input', () => {
     audioPlayer.volume = parseFloat(controlVolumen.value);
@@ -54,19 +77,34 @@ playButton.addEventListener('click', () => {
     if (isPlaying) {
         // Si la música está reproduciéndose, pausarla
         audioPlayer.pause();
+        playButton.innerHTML = `
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M12,1A11,11,0,1,0,23,12,11.013,11.013,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9.011,9.011,0,0,1,12,21ZM10,8l6,4-6,4Z">
+                </path>
+            </g>
+        `;
         isPlaying = false;
     } else {
         // Si la música está pausada, reproducirla
         audioPlayer.play();
+        playButton.innerHTML = `
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" style="fill: #00ffde;"></path>
+        `;
         isPlaying = true;
     }
 });
 
 
 
+
 // boton play de la tabla
 playButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
+    playButton.innerHTML = `
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" style="fill: #00ffde;"></path>
+    `;
         isPlaying = true;
         changeSong(index);
     });

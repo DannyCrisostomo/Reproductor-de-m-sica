@@ -9,12 +9,12 @@ function showSlide(index) {
   currentIndex = index;
 }
 function prevSlide() {
-    currentIndex = (currentIndex - 1 + 29) % 29; // Cambia 3 por el número total de elementos en el carrusel
+    currentIndex = (currentIndex - 1 + 26) % 26; // Cambia 3 por el número total de elementos en el carrusel
     showSlide(currentIndex);
   }
 
   function nextSlide() {
-    currentIndex = (currentIndex + 1) % 28; // Cambia 3 por el número total de elementos en el carrusel
+    currentIndex = (currentIndex + 1) % 26; // Cambia 3 por el número total de elementos en el carrusel
     showSlide(currentIndex);
   }
 
@@ -30,7 +30,7 @@ function showSlide2(index) {
     currentIndex = index;
 }
 function prevSlide2() {
-    currentIndex2 = (currentIndex2 - 1 + 29) % 29; // Cambia 3 por el número total de elementos en el carrusel
+    currentIndex2 = (currentIndex2 - 1 + 31) % 31; // Cambia 3 por el número total de elementos en el carrusel
     showSlide2(currentIndex2);
   }
   function nextSlide2() {

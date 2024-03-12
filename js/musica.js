@@ -1,156 +1,118 @@
 const datos_musica = [
     {
         imagen: "img/image1.jpg",
-        nombre:"boy",
-        musica: "music1.mp3",
+        nombre:"Aventura - La Boda",
+        musica: "Aventura - La Boda.mp3",
     },
     {
         imagen: "img/image2.jpg",
-        nombre:"boy",
-        musica: "music2.mp3",
+        nombre:"Aventura - Angelito",
+        musica: "Aventura - Angelito.mp3",
     },
     {
         imagen: "img/image3.jpg",
-        nombre:"boy",
-        musica: "music3.mp3",
+        nombre:"Hoja en Blanco - Monchy y Alexandra",
+        musica: "Hoja en Blanco - Monchy y Alexandra.mp3",
     },
     {
         imagen: "img/image4.jpg",
-        nombre:"boy",
-        musica: "music4.mp3",
+        nombre:"Big Boy - Mis Ojos Lloran Por Ti (Lyrics)",
+        musica: "Big Boy - Mis Ojos Lloran Por Ti (Lyrics).mp3",
     },
     {
         imagen: "img/image1.jpg",
-        nombre:"boy",
-        musica: "music1.mp3",
+        nombre:"Aventura - La Boda",
+        musica: "Aventura - La Boda.mp3",
     },
     {
         imagen: "img/image2.jpg",
-        nombre:"boy",
-        musica: "music2.mp3",
+        nombre:"Aventura - Angelito",
+        musica: "Aventura - Angelito.mp3",
     },
     {
         imagen: "img/image3.jpg",
-        nombre:"boy",
-        musica: "music3.mp3",
+        nombre:"Hoja en Blanco - Monchy y Alexandra",
+        musica: "Hoja en Blanco - Monchy y Alexandra.mp3",
     },
     {
         imagen: "img/image4.jpg",
-        nombre:"boy",
-        musica: "music4.mp3",
+        nombre:"Big Boy - Mis Ojos Lloran Por Ti (Lyrics)",
+        musica: "Big Boy - Mis Ojos Lloran Por Ti (Lyrics).mp3",
     },
     {
         imagen: "img/image1.jpg",
-        nombre:"boy",
-        musica: "music1.mp3",
+        nombre:"Aventura - La Boda",
+        musica: "Aventura - La Boda.mp3",
     },
     {
         imagen: "img/image2.jpg",
-        nombre:"boy",
-        musica: "music2.mp3",
+        nombre:"Aventura - Angelito",
+        musica: "Aventura - Angelito.mp3",
     },
     {
         imagen: "img/image3.jpg",
-        nombre:"boy",
-        musica: "music3.mp3",
+        nombre:"Hoja en Blanco - Monchy y Alexandra",
+        musica: "Hoja en Blanco - Monchy y Alexandra.mp3",
     },
     {
         imagen: "img/image4.jpg",
-        nombre:"boy",
-        musica: "music4.mp3",
+        nombre:"Big Boy - Mis Ojos Lloran Por Ti (Lyrics)",
+        musica: "Big Boy - Mis Ojos Lloran Por Ti (Lyrics).mp3",
     },
     {
         imagen: "img/image1.jpg",
-        nombre:"boy",
-        musica: "music1.mp3",
+        nombre:"Aventura - La Boda",
+        musica: "Aventura - La Boda.mp3",
     },
     {
         imagen: "img/image2.jpg",
-        nombre:"boy",
-        musica: "music2.mp3",
+        nombre:"Aventura - Angelito",
+        musica: "Aventura - Angelito.mp3",
     },
     {
         imagen: "img/image3.jpg",
-        nombre:"boy",
-        musica: "music3.mp3",
+        nombre:"Hoja en Blanco - Monchy y Alexandra",
+        musica: "Hoja en Blanco - Monchy y Alexandra.mp3",
     },
     {
         imagen: "img/image4.jpg",
-        nombre:"boy",
-        musica: "music4.mp3",
+        nombre:"Big Boy - Mis Ojos Lloran Por Ti (Lyrics)",
+        musica: "Big Boy - Mis Ojos Lloran Por Ti (Lyrics).mp3",
     },
     {
         imagen: "img/image1.jpg",
-        nombre:"boy",
-        musica: "music1.mp3",
+        nombre:"Aventura - La Boda",
+        musica: "Aventura - La Boda.mp3",
     },
     {
         imagen: "img/image2.jpg",
-        nombre:"boy",
-        musica: "music2.mp3",
+        nombre:"Aventura - Angelito",
+        musica: "Aventura - Angelito.mp3",
     },
     {
         imagen: "img/image3.jpg",
-        nombre:"boy",
-        musica: "music3.mp3",
+        nombre:"Hoja en Blanco - Monchy y Alexandra",
+        musica: "Hoja en Blanco - Monchy y Alexandra.mp3",
     },
     {
         imagen: "img/image4.jpg",
-        nombre:"boy",
-        musica: "music4.mp3",
-    },
-    {
-        imagen: "img/image1.jpg",
-        nombre:"boy",
-        musica: "music1.mp3",
-    },
-    {
-        imagen: "img/image2.jpg",
-        nombre:"boy",
-        musica: "music2.mp3",
-    },
-    {
-        imagen: "img/image3.jpg",
-        nombre:"boy",
-        musica: "music3.mp3",
-    },
-    {
-        imagen: "img/image4.jpg",
-        nombre:"boy",
-        musica: "music4.mp3",
-    },
-    {
-        imagen: "img/image1.jpg",
-        nombre:"boy",
-        musica: "music1.mp3",
-    },
-    {
-        imagen: "img/image2.jpg",
-        nombre:"boy",
-        musica: "music2.mp3",
-    },
-    {
-        imagen: "img/image3.jpg",
-        nombre:"boy",
-        musica: "music3.mp3",
-    },
-    {
-        imagen: "img/image4.jpg",
-        nombre:"boy",
-        musica: "music4.mp3",
+        nombre:"Big Boy - Mis Ojos Lloran Por Ti (Lyrics)",
+        musica: "Big Boy - Mis Ojos Lloran Por Ti (Lyrics).mp3",
     },
 ];
 
 const insertar_datos = document.getElementById("musicas");
+let contador = 1;
 for (let index of datos_musica) {
+    const numeroCeroRellenado = contador.toString().padStart(2, '0');
     insertar_datos.innerHTML += `
         <tr>
-            <td>01</td>
+            <td class="numeroCeroRellenado">${numeroCeroRellenado}</td>
             <td><img src="${index.imagen}" alt="Portada de la cancións 1" width="50"></td>
-            <td>${index.nombre}</td>
+            <td id="nombre_audio">${index.nombre}</td>
             <td>
-                <p class="play-button" class="musica_tabla" data-src="music/${index.musica}">
-                    <svg fill="#ffffff" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                <p class="play-button"   class="musica_tabla" data-src="music/${index.musica}">
+                    <svg fill="#ffffff" class="svg-tabla" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -161,4 +123,6 @@ for (let index of datos_musica) {
             </td>
         </tr>
 `;
+contador++;
 }
+

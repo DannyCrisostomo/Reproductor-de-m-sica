@@ -131,7 +131,9 @@
   .circle {
     padding: 7px;
     height: 80%;
+    width: 80%;
     border: 3px solid #00ffde;
+    box-shadow: inset 0 0 1.5rem 0.5rem #00ffde1f, 0 0 4rem 0.1rem rgb(0 255 173 / 38%);
 }
   .album-art {
     height: 50%;

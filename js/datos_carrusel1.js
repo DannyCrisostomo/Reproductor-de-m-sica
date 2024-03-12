@@ -1,8 +1,23 @@
 const datos_carrusel1 = [
     {
         imagen: "img/image1.jpg",
-        tema: "boy 1",
-        cantante: "anonimo 1",
+        tema: "	La Boda",
+        cantante: "Aventura",
+    },
+    {
+        imagen: "img/image2.jpg",
+        tema: "Angelito",
+        cantante: "Aventura",
+    },
+    {
+        imagen: "img/image3.jpg",
+        tema: "Hoja en Blanco",
+        cantante: "Monchy y Alexandra",
+    },
+    {
+        imagen: "img/image1.jpg",
+        tema: "Mis Ojos Lloran Por Ti",
+        cantante: "Big Boy",
     },
     {
         imagen: "img/image2.jpg",
@@ -120,17 +135,22 @@ const datos_carrusel1 = [
         cantante: "anonimo 3",
     },
     {
-        imagen: "img/image1.jpg",
-        tema: "boy 1",
-        cantante: "anonimo 1",
-    },
-    {
-        imagen: "img/image2.jpg",
-        tema: "boy 2",
-        cantante: "anonimo 2",
+        imagen: "img/image3.jpg",
+        tema: "boy 3",
+        cantante: "anonimo 3",
     },
     {
         imagen: "img/image3.jpg",
+        tema: "boy 3",
+        cantante: "anonimo 3",
+    },
+    {
+        imagen: "img/image3.jpg",
+        tema: "boy 3",
+        cantante: "anonimo 3",
+    },
+    {
+        imagen: "img/image1.jpg",
         tema: "boy 3",
         cantante: "anonimo 3",
     },

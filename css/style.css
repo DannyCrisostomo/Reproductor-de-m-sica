@@ -21,11 +21,10 @@
   letter-spacing: 0 !important;
   cursor: url("../img_estilos/cursor.png"), auto;
   color: white;
-
 }
 #Contenedor {
   background: rgba(0, 0, 0, 0.897);
-  padding: 60px 40px;
+  padding: 20px 10px;
   height: 100vh;
   
   /* Establece la altura máxima en 100vh. */
@@ -33,28 +32,43 @@
   /* Evita el desbordamiento y elimina la barra de desplazamiento. */
 }
 
-/*Cuerpo*/
-.contenedor {
-  height: 85%;
+.sub-contenedor {
   display: flex;
+  width: 100%;
+  height: 85%;
 }
+/*Cuerpo*/
+.links{
+  color: #00ffde;;
+}
+.contenedor {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  background-image: url(../img_estilos/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .isquierda {
   padding: 1% 0% 0% 1%;
   width: 30%;
   height: 100%;
-  background: rgb(15, 24, 39);
 
 }
 .derecha {
-  width: 100%;
+  overflow: auto;
+  width: 70%;
   height: 100%;
-  background: rgb(12, 19, 34);
 }
 .bajo {
   height: 15%;
   width: 100%;
   display: flex;
-  background: rgb(12, 19, 31);
+  flex-direction: column;
 }
 /*SVG*/
 .play1{
@@ -87,12 +101,11 @@
 
 /*dERECHJA*/
 .imagenD {
-  background-image: url(../img_estilos/fondo.png);
   height: 100%;
-  padding: 0 60px;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .p{
   height: auto;
@@ -130,26 +143,25 @@
 }
 .text2 {
   width: 100%;
-  height: 40%;
   padding: 0px 40px;
+  position: relative;
 }
 .text_sup {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
+  width: 100%;
 }
 .carousel-container {
   display: flex;
   overflow: hidden;
-  width: 62%;
-  position: absolute;
+  width: 100%;
 }
 .carousel-container2 {
   display: flex;
   overflow: hidden;
-  width: 62%;
-  position: absolute;
+  width: 100%;
 }
 .carousel-wrapper {
   display: flex;
@@ -186,9 +198,10 @@ border: none;
   color: #fff;
   border: none;
   }
-.carousel-item2{
-  display: flex;
-  gap: 5px;
+  .carousel-item2 {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
 }
 
 .carousel-item2 img {
@@ -199,8 +212,8 @@ border: none;
 
 .text3 {
   width: 100%;
-  height: 25%;
   padding: 0px 40px;
+  position: relative;
 }
 .sup {
   padding: 10px 40px;
@@ -208,7 +221,8 @@ border: none;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .mid {
   display: flex;
@@ -221,6 +235,10 @@ border: none;
 
 svg {
   margin-right: 8px;
+}
+#back-button:hover,#play-button:hover, #next-button:hover, #play-button-tabla:hover {
+  fill: #00ffde; /* Reemplaza "yourHoverColor" con el color que deseas al pasar el mouse */
+  border: none;
 }
 
 input {
@@ -304,7 +322,9 @@ input {
   100% { height: 4px}
 }
 
-
+#musica{
+  text-align: center;
+}
 .musica{
   overflow: auto;
   height: 100%;
@@ -384,4 +404,37 @@ input {
   display: flex;
   align-items: center;
   width: auto;
+}
+/**/
+/**/
+/*table*/
+/**/
+/**/
+.playlist-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.playlist-table td {
+  text-align: left;
+  padding: 8px;
+  max-height: 50px; /* Ajusta según sea necesario */
+  overflow: hidden;
+}
+.playlist-table img {
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.svg-tabla {
+  fill: #ffffff;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.svg-tabla:hover {
+  fill: #00ffde;
+}
+.numeroCeroRellenado{
+  color: #616161;
 }
