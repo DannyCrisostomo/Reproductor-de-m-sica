@@ -12,7 +12,7 @@ Compatibilidad Cruzada: Este reproductor ha sido diseñado para ser compatible c
 
 # Cómo Usar:
 
-Para acceder a Playlist, visita [Playlist](https://harmonious-peony-60095b.netlify.app/).
+Para acceder a Playlist, visita [Playlist](https://prismatic-meringue-51ab1e.netlify.app/).
 
 ![Preview en Móvil](https://github.com/DannyCrisostomo/Reproductor-de-musica/blob/1b997766a454f794569ccb8e6fb2ad7ad6ab7f81/movil.jpg)
 ![Preview en Móvil](https://github.com/DannyCrisostomo/Reproductor-de-musica/blob/1b997766a454f794569ccb8e6fb2ad7ad6ab7f81/movil%20lista.jpg)
