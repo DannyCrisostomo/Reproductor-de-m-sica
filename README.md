@@ -12,6 +12,8 @@ Compatibilidad Cruzada: Este reproductor ha sido diseñado para ser compatible c
 
 # Cómo Usar:
 
+Para acceder a Playlist, visita [Playlist](https://harmonious-peony-60095b.netlify.app/).
+
 Clona este repositorio en tu máquina local.
 
 Bash
