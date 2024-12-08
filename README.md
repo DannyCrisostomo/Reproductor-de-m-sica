@@ -14,6 +14,10 @@ Compatibilidad Cruzada: Este reproductor ha sido diseñado para ser compatible c
 
 Para acceder a Playlist, visita [Playlist](https://harmonious-peony-60095b.netlify.app/).
 
+![Preview en Móvil](https://github.com/DannyCrisostomo/PictureReel/blob/4f5727024fa700623c6b72a04fc406ff00899f18/img/movil.png)
+
+![Preview en Windows](https://github.com/DannyCrisostomo/Reproductor-de-musica/blob/743bc5fb1fa96848f7321b62cbdaaf110c37cbc8/Playlist.jpg)
+
 Clona este repositorio en tu máquina local.
 
 Bash
