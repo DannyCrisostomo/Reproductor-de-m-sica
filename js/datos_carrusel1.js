@@ -161,7 +161,7 @@ for (let index of datos_carrusel1 ) {
     insertar_carrusel1.innerHTML += `
 
     <div class="carousel-item">
-        <img src="${index.imagen}" alt="Imagen 1">
+        <img src="${index.imagen}" alt="Imagen 1" loading="lazy">
         <p>${index.tema}</p>
         <p>${index.cantante}</p>
     </div>
